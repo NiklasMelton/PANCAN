@@ -39,5 +39,6 @@ if __name__ == '__main__':
     clf.fit(X_train)
 
     y_pred = clf.predict(X_test)
+    print('Confusion Matrix')
     print(confusion_matrix(y_test,y_pred))
     print("Adjusted rand index for cluster prediction is: ",adjusted_rand_score(y_test,y_pred))
